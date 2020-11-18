@@ -1,15 +1,16 @@
-// Import Modules
+// Import modules
 const express = require('express')
 const axios = require('axios')
 
-// Initiate Modules
+// Initiate modules
 const app = express()
 
-// Create Port
+// Create port
 const PORT = process.env.PORT || 3000
 
+// Create routes
 app.get('/', (req, res) => {
-    // Starting message for page load, which MUST BE COMMENTED OUT, or else it would conflict with the below message
+    // Starting message (MUST COMMENT OUT to avoid conflict below)
     // res.send('GitHub API Express Page')
     // OLD METHOD
     // fetch('api endpoint')
